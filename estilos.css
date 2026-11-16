@@ -1,0 +1,22 @@
+/* Estilo de Windows 95 */
+* { box-sizing: border-box; }
+body { margin: 0; padding: 18px; background: #008080; font: 14px Arial, sans-serif; color: #111; }
+header { color: white; margin: 0 auto 18px; max-width: 1100px; }
+h1 { font-size: 23px; margin: 0 0 5px; }
+header p { margin: 0; }
+
+/* Ordena las ventanas */
+main { max-width: 1100px; margin: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; align-items: start; }
+.ventana { background: #c0c0c0; padding: 4px; border: 2px solid; border-color: white #444 #444 white; box-shadow: 2px 2px 0 #222; }
+h2 { margin: 0; padding: 7px 9px; color: white; background: #000080; font-size: 14px; }
+.contenido { padding: 13px 10px 8px; }
+label { display: block; margin-bottom: 10px; }
+input { display: block; width: 100%; margin-top: 4px; padding: 5px; background: white; border: 2px solid; border-color: #555 white white #555; border-radius: 0; font: inherit; }
+button { padding: 6px 12px; background: #c0c0c0; border: 2px solid; border-color: white #444 #444 white; border-radius: 0; cursor: pointer; font: inherit; }
+button:active { border-color: #444 white white #444; }
+.resultado { min-height: 44px; margin: 12px 0 0; padding: 8px; background: #eee; border: 1px inset #888; overflow-wrap: anywhere; }
+footer { max-width: 1100px; margin: 20px auto 0; color: white; font-size: 12px; }
+
+/* Ajusta las ventanas a pantallas pequeñas */
+@media (max-width: 850px) { main { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 550px) { main { grid-template-columns: 1fr; } }

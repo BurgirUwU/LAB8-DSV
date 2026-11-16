@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UwU</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Lab8</h1>
+    <p>Ejercicios de programación</p>
+  </header>
+
+  <main>
+    <!-- Suma de tres números -->
+    <section class="ventana">
+      <h2>1. Suma de tres valores</h2>
+      <div class="contenido">
+        <label>Primer número <input id="s1" type="number" step="any"></label>
+        <label>Segundo número <input id="s2" type="number" step="any"></label>
+        <label>Tercer número <input id="s3" type="number" step="any"></label>
+        <button onclick="sumar()">Sumar</button>
+        <p class="resultado" id="r1" aria-live="polite">Resultado: --</p>
+      </div>
+    </section>
+
+    <!-- Cuadrado de un número -->
+    <section class="ventana">
+      <h2>2. Cuadrado de un número</h2>
+      <div class="contenido">
+        <label>Escribe un número <input id="n" type="number" step="any"></label>
+        <button onclick="cuadrado()">Calcular cuadrado</button>
+        <p class="resultado" id="r2" aria-live="polite">Resultado: --</p>
+      </div>
+    </section>
+
+    <!-- Promedio de notas -->
+    <section class="ventana">
+      <h2>3. Promedio de calificaciones</h2>
+      <div class="contenido">
+        <label>Estudiante <input id="nombre" type="text"></label>
+        <label>Nota 1 <input id="p1" type="number" step="any"></label>
+        <label>Nota 2 <input id="p2" type="number" step="any"></label>
+        <label>Nota 3 <input id="p3" type="number" step="any"></label>
+        <button onclick="promedio()">Calcular promedio</button>
+        <p class="resultado" id="r3" aria-live="polite">Resultado: --</p>
+      </div>
+    </section>
+
+    <!-- Conversión de metros -->
+    <section class="ventana">
+      <h2>4. Conversión de metros</h2>
+      <div class="contenido">
+        <label>Metros <input id="metros" type="number" step="any"></label>
+        <button onclick="convertir()">Convertir</button>
+        <p class="resultado" id="r4" aria-live="polite">Resultado: --</p>
+      </div>
+    </section>
+
+    <!-- Comparación de números -->
+    <section class="ventana">
+      <h2>5. Comparación de valores</h2>
+      <div class="contenido">
+        <label>Primer número <input id="c1" type="number" step="any"></label>
+        <label>Segundo número <input id="c2" type="number" step="any"></label>
+        <button onclick="comparar()">Comparar</button>
+        <p class="resultado" id="r5" aria-live="polite">Resultado: --</p>
+      </div>
+    </section>
+  </main>
+  <footer>Hola, esto es solo relleno, me gusta las hamburguesas - 2026</footer>
+</body>
+</html>
